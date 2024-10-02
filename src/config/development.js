@@ -12,5 +12,14 @@ module.exports = {
     allowedHeaders: "*",
     credentials: true,
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  },
+  redis: {
+    password: 'REDIS_PASSWORD'
+  },
+  cockroach: {
+    user: 'root',
+    maxPoolSize: 10,
+    host: '127.0.0.1',
+    port: 26257,
   }
 }
